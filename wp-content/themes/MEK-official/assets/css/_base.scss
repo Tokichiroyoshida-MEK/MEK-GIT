@@ -14,5 +14,61 @@ $media_size: (
 }
 
 // ーーーーーーーーーーー共通項目 基本事項ーーーーーーーーーーー
+* {
+margin: 0;
+padding: 0;
+}
+body{
+max-width: 1750px;
+color: #ffffff;
+background-color: black;
+}
 
+// ーーーーーーーーーーーメインーーーーーーーーーーーー
+.inner{
+width: 1500px; /* 好きな幅 */
+max-width: 100%;
+margin: 0 auto;
+padding: 24px;
+}
+.top_kv_catch{
+writing-mode: vertical-rl;
+font-size: 36px;
+font-weight: bold;
+font-family: yumincho;
+float: right;
+position: fixed;
+top: 110px;
+left: 1400px;
+}
+
+// ーーーーーーーーーーースライドバーーーーーーーーーーーー
+.sidebar{
+padding-left: 150px;
+padding-right: 150px;
+}
+.top_kv_nav{
+display: flex;
+}
+.top_kv_nav_main{
+display: flex;
+}
+.top_kv_nav_main li{
+margin-right: 20px;
+}
+.top_kv_nav_main li a{
+writing-mode: vertical-rl;
+font-size: 23px;
+font-family: yumincho;
+}
+.top_kv_text{
+margin-top: 20px;
+font-family: yumincho;
+text-decoration: underline;
+}
+
+// 2023/10/19
+// 2023/10/19
+// 2023/10/19
+// 2023/10/19
 

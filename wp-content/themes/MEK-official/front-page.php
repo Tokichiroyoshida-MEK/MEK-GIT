@@ -1,10 +1,11 @@
 <!-- トップページ情報 -->
 <?php get_header ();?>
 
-<!-- array_change_key_case -->
-<!-- array_change_key_case -->
-<!-- array_change_key_case -->
-<!-- array_change_key_case -->
+
+
+
+<?php get_template_part('blocks/bl_01'); ?>
+
 
 
 <?php get_footer();

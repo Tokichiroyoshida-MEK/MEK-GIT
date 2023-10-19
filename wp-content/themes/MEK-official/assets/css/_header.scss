@@ -1,0 +1,18 @@
+// heder記述
+.header{
+height: 200px;
+width: 100%;
+}
+.header_kv_logo img{
+height: 200px;
+}
+.header_kv_logo{
+position: fixed;
+z-index: 10;
+top: 6.4rem;
+left: 12.8rem;
+display: grid;
+justify-content: start;
+}
+
+
