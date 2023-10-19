@@ -57,6 +57,16 @@ body {
   text-decoration: underline;
 }
 
+body {
+  background-image: url("../images/black.jpeg");
+  background-repeat: repeat;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
 .header {
   height: 200px;
   width: 100%;
