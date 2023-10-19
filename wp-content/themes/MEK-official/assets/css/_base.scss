@@ -1,0 +1,18 @@
+// ーーーーーーーーーーーレスポンシブサイト 基本事項ーーーーーーーーーーー
+
+$media_size: (
+    'sm': 'screen and (min-width: 400px)',
+    'pc': 'screen and (min-width: 1000px)',                  // @media screen and (min-width:768px)
+    'lg': 'screen and (min-width: 1276px)',
+    'xl': 'screen and (min-width: 1752px)',
+) !default;                                                 // 上書きの可能性のある記述内容
+
+@mixin mq($breakpoint: pc) {                                // 初期値指定
+    @media #{map-get($media_size, $breakpoint)} {
+        @content;
+    }
+}
+
+// ーーーーーーーーーーー共通項目 基本事項ーーーーーーーーーーー
+
+
