@@ -67,6 +67,137 @@ body {
   color: #ffffff;
 }
 
+/* header*/
+.header {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.header_kv_logo img {
+  position: fixed;
+  height: 340px;
+  top: 80px;
+  left: 50px;
+}
+
+.header_kv_text {
+  position: relative;
+}
+
+.header_kv_text_txt {
+  font-size: 36px;
+  font-family: yumincho;
+  line-height: 1.5;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 90px;
+  right: 100px;
+}
+
+/* main*/
+.main {
+  margin-top: 800px;
+  height: 1030px;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1400px;
+  max-width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.top_inner_contents_text {
+  display: block;
+  font-family: yumincho;
+  float: right;
+  line-height: 1.5;
+  margin-bottom: 180px;
+}
+
+.top_inner_contents_text_txt {
+  margin-top: 30px;
+}
+
+.copyright-text {
+  text-align: center;
+}
+
+.top_inner_contents_nav {
+  display: block;
+}
+
+.top_inner_contents_nav_content {
+  display: inline-block;
+  float: right;
+  width: 100%;
+}
+
+.top_inner_contents_nav_item {
+  display: block;
+  font-size: 24px;
+  font-family: yumincho;
+}
+
+.top_inner_contents_nav_item a {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-left: 650px;
+}
+
+.sidebar {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+
+.sidebar .top_kv_nav .top_kv_nav_main {
+  display: flex;
+  margin-left: 100px;
+}
+
+.sidebar .top_kv_nav .top_kv_nav_main li {
+  font-size: 36px;
+  font-family: yumincho;
+  writing-mode: vertical-rl;
+  display: flex;
+  margin-right: 20px;
+}
+
+.top_kv_text {
+  font-size: 15px;
+  font-family: yumincho;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+/* footer*/
+.footer {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.top_kv_text {
+  font-family: yumincho;
+  font-size: 15px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.top_kv_sub {
+  display: flex;
+}
+
+.top_kv_img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 .header {
   height: 200px;
   width: 100%;
@@ -74,15 +205,26 @@ body {
 
 .header_kv_logo img {
   height: 200px;
-}
-
-.header_kv_logo {
   position: fixed;
   z-index: 10;
   top: 6.4rem;
   left: 12.8rem;
   display: grid;
   justify-content: start;
+}
+
+.header_kv_text {
+  position: relative;
+}
+
+.header_kv_text_txt {
+  font-size: 36px;
+  font-family: yumincho;
+  line-height: 1.5;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 90px;
+  right: 640px;
 }
 
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
