@@ -5,9 +5,9 @@
 
 <main class="main">
     <section class="top inner">
-    <div class="top_inner_contents">
-        <div class="top_inner_contents_text">
-            <p class="top_inner_contents_text_txt">時を経た真の美味しさ、<br>
+        <div class="top_inner_contents">
+            <div class="top_inner_contents_text">
+                <p class="top_inner_contents_text_txt">時を経た真の美味しさ、<br>
                 歴史あるの " 熟成鮨 " を、<br>
                 乾燥と真空の独自の熟成技法で<br>
                 その魅力を最大限に引き出します。<br>
@@ -15,17 +15,17 @@
                 大将と奥様の温かみある接客が<br>
                 訪れる人々に安らぎの時を提供します。<br>
                 鮨まるふくでは、時代を超えた伝統と、<br>
-                独自の技法の融合が、一貫の鮨に表れます
-            </p>
-            <p class="top_inner_contents_text_txt">テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
-            テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
-            </p>
-            <p class="top_inner_contents_text_txt">テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
-            テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
-            <p class="top_inner_contents_text_txt">テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
-            テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
-            </p>
-    </div>
+                独自の技法の融合が、一貫の鮨に表れます。
+                </p>
+                <p class="top_inner_contents_text_txt">テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
+                </p>
+                <p class="top_inner_contents_text_txt">テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
+                <p class="top_inner_contents_text_txt">テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
+                </p>
+            </div>
 
             <div class="sidebar inner">
                 <nav class="top_kv_nav">

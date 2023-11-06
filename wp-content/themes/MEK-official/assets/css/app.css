@@ -207,8 +207,8 @@ body {
   height: 200px;
   position: fixed;
   z-index: 10;
-  top: 6.4rem;
-  left: 12.8rem;
+  top: 50px;
+  left: 100px;
   display: grid;
   justify-content: start;
 }
@@ -223,8 +223,8 @@ body {
   line-height: 1.5;
   writing-mode: vertical-rl;
   position: fixed;
-  top: 90px;
-  right: 640px;
+  top: 50px;
+  right: 100px;
 }
 
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
