@@ -8,7 +8,7 @@ height: 200px;
 position: fixed;
 z-index: 10;
 top: 50px;
-left: 100px;
+left: 150px;
 display: grid;
 justify-content: start;
 }
@@ -18,10 +18,12 @@ position: relative;
 }
 .header_kv_text_txt{
 font-size: 36px;
+color: #D0C5AB;
 font-family: yumincho;
 line-height: 1.5;
 writing-mode: vertical-rl;
 position: fixed;
 top: 50px;
-right: 100px;
+right: 150px;
+text-align: justify;
 }

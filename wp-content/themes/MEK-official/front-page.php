@@ -22,12 +22,36 @@
                 </p>
                 <p class="top_inner_contents_text_txt">テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
                 テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
-                <p class="top_inner_contents_text_txt">テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>
-                テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
-                </p>
             </div>
 
-            <div class="sidebar inner">
+            <div class="top_inner_contents_nav">
+                <ul class="top_inner_contents_nav_content">
+                    <li class="top_inner_contents_nav_item">
+                        <p class="p-button">
+                            <a href="">ご挨拶を見る</a>
+                        </p>
+                    </li>
+                    <li class="top_inner_contents_nav_item">
+                        <p class="p-button">
+                            <a href="">こだわりを見る</a>
+                        </p>
+                    </li>
+                    <li class="top_inner_contents_nav_item">
+                        <p class="p-button">
+                            <a href="">店舗案内を見る</a>
+                        </p>
+                    </li>
+                    <li class="top_inner_contents_nav_item">
+                        <p class="p-button">
+                            <a href="">ご予約を見る</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+            <div class="sidebar">
                 <nav class="top_kv_nav">
                     <ul class="top_kv_nav_main">
                         <li><a href="#about">ご挨拶</a></li>
@@ -52,32 +76,6 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.png" alt="" height="24px" width="24px">
                     </p>
                 </div>
-            </div>
-    </section>
-
-    <div class="top_inner_contents_nav">
-            <ul class="top_inner_contents_nav_content">
-                <li class="top_inner_contents_nav_item">
-                    <p class="p-button">
-                        <a href="">ご挨拶を見る</a>
-                    </p>
-                </li>
-                <li class="top_inner_contents_nav_item">
-                    <p class="p-button">
-                        <a href="">こだわりを見る</a>
-                    </p>
-                </li>
-                <li class="top_inner_contents_nav_item">
-                    <p class="p-button">
-                        <a href="">店舗案内を見る</a>
-                    </p>
-                </li>
-                <li class="top_inner_contents_nav_item">
-                    <p class="p-button">
-                        <a href="">ご予約を見る</a>
-                    </p>
-                </li>
-            </ul>
             </div>
 </main>
 

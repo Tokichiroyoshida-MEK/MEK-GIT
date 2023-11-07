@@ -19,9 +19,16 @@ margin: 0;
 padding: 0;
 }
 body{
-max-width: 1750px;
+max-width: 100%;
 color: #ffffff;
-background-color: black;
+margin: 0 auto;
+height: auto;
+
+background-color: #1B1A19;
+}
+
+body {
+background-repeat: repeat;
 }
 
 // ーーーーーーーーーーーメインーーーーーーーーーーーー
@@ -59,25 +66,17 @@ margin-right: 20px;
 .top_kv_nav_main li a{
 writing-mode: vertical-rl;
 font-size: 23px;
+color: #D0C5AB;
 font-family: yumincho;
 }
 .top_kv_text{
 margin-top: 20px;
+color: #D0C5AB;
 font-family: yumincho;
 text-decoration: underline;
 }
 
 // ーーーーーーーーーーー背景動画ーーーーーーーーーーーー
-
-body {
-    background-image: url("../images/black.jpeg");
-    background-repeat: repeat;
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    text-align: center;
-    color: #ffffff;
-}
 /* header*/
 .header{
     height: 100px;
@@ -123,6 +122,8 @@ body {
     }
     .top_inner_contents_text_txt{
     margin-top: 30px;
+    text-align: left;
+    color: #D0C5AB;
     }
     .copyright-text{
     text-align: center;
