@@ -19,3 +19,17 @@
     margin-top: 20px;
     margin-left: 20px;
     }
+    @media screen and (max-width:768px) {
+        /* ここにSP向けのCSS指定 */
+    .top_kv_text {
+        font-size: 18px;
+        border: solid 1px #D0C5AB;
+        border-radius: 20px;
+        margin-top: 20px;
+        width: 100px;
+    }
+    .top_kv_img{
+    margin-left: 10px;
+    width: 30px;
+    }
+}

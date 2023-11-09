@@ -130,7 +130,7 @@ a {
  */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -206,7 +206,7 @@ select,
 textarea {
   -webkit-appearance: none; /* 1 */
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -362,6 +362,7 @@ caption {
   text-align: left;
 }
 
+
 td,
 th {
   vertical-align: top;
@@ -371,4 +372,4 @@ th {
 th {
   text-align: left;
   font-weight: bold;
-} /*# sourceMappingURL=reset_css.css.map */
+}/*# sourceMappingURL=reset_css.css.map */
