@@ -1,27 +1,66 @@
 // heder記述
 .header{
-height: 200px;
-width: 100%;
-}
-.header_kv_logo img{
-height: 200px;
-position: fixed;
-z-index: 10;
-top: 6.4rem;
-left: 12.8rem;
-display: grid;
-justify-content: start;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    &_kv_logo img{
+        height: 200px;
+        width: auto;
+        position: fixed;
+        z-index: 10;
+        top: 50px;
+        left: 150px;
+        display: grid;
+        justify-content: start;
+        &_kv_text{
+            position: relative;
+            &_txt{
+                font-size: 36px;
+                color: #D0C5AB;
+                font-family: yumincho;
+                line-height: 1.5;
+                writing-mode: vertical-rl;
+                position: fixed;
+                top: 50px;
+                right: 150px;
+                text-align: justify;
+                }
+            }
+    }
 }
 
-.header_kv_text{
-position: relative;
-}
 .header_kv_text_txt{
-font-size: 36px;
-font-family: yumincho;
-line-height: 1.5;
-writing-mode: vertical-rl;
-position: fixed;
-top: 90px;
-right: 640px;
+    font-size: 36px;
+    font-family: yumincho;
+    color: #D0C5AB;
+    line-height: 1.5;
+    writing-mode: vertical-rl;
+    position: fixed;
+    top: 60px;
+    right: 150px;
+    }
+
+@media screen and (max-width:768px) {
+        /* ここにSP向けのCSS指定 */
+        .header{
+            position: relative;
+            &_kv_logo img{
+                left: 30px;
+                top: 20px;
+                &_kv_text{
+                    position: relative;
+                    }
+            }
+        }
+        .header_kv_text_txt{
+            right: 30px;
+            top: 300px;
+            font-size: 26px;
+            }
+        }
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+.header_kv_logo img{
+left: 30px;
+}
 }

@@ -5,174 +5,11 @@
 }
 
 body {
-  max-width: 1750px;
-  color: #ffffff;
-  background-color: black;
-}
-
-.inner {
-  width: 1500px; /* 好きな幅 */
   max-width: 100%;
+  color: #ffffff;
   margin: 0 auto;
-  padding: 24px;
-}
-
-.top_kv_catch {
-  writing-mode: vertical-rl;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: yumincho;
-  float: right;
-  position: fixed;
-  top: 110px;
-  left: 1400px;
-}
-
-.sidebar {
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.top_kv_nav {
-  display: flex;
-}
-
-.top_kv_nav_main {
-  display: flex;
-}
-
-.top_kv_nav_main li {
-  margin-right: 20px;
-}
-
-.top_kv_nav_main li a {
-  writing-mode: vertical-rl;
-  font-size: 23px;
-  font-family: yumincho;
-}
-
-.top_kv_text {
-  margin-top: 20px;
-  font-family: yumincho;
-  text-decoration: underline;
-}
-
-body {
-  background-image: url("../images/black.jpeg");
-  background-repeat: repeat;
-  width: 100vw;
   height: auto;
-  margin: 0;
-  text-align: center;
-  color: #ffffff;
-}
-
-/* header*/
-.header {
-  height: 100px;
-  width: 100%;
-  position: relative;
-}
-
-.header_kv_logo img {
-  position: fixed;
-  height: 340px;
-  top: 80px;
-  left: 50px;
-}
-
-.header_kv_text {
-  position: relative;
-}
-
-.header_kv_text_txt {
-  font-size: 36px;
-  font-family: yumincho;
-  line-height: 1.5;
-  writing-mode: vertical-rl;
-  position: fixed;
-  top: 90px;
-  right: 100px;
-}
-
-/* main*/
-.main {
-  margin-top: 800px;
-  height: 1030px;
-}
-
-.inner {
-  margin: 0 auto;
-  width: 1400px;
-  max-width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.top_inner_contents_text {
-  display: block;
-  font-family: yumincho;
-  float: right;
-  line-height: 1.5;
-  margin-bottom: 180px;
-}
-
-.top_inner_contents_text_txt {
-  margin-top: 30px;
-}
-
-.copyright-text {
-  text-align: center;
-}
-
-.top_inner_contents_nav {
-  display: block;
-}
-
-.top_inner_contents_nav_content {
-  display: inline-block;
-  float: right;
-  width: 100%;
-}
-
-.top_inner_contents_nav_item {
-  display: block;
-  font-size: 24px;
-  font-family: yumincho;
-}
-
-.top_inner_contents_nav_item a {
-  display: block;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-left: 650px;
-}
-
-.sidebar {
-  position: fixed;
-  bottom: 50px;
-  left: 50px;
-}
-
-.sidebar .top_kv_nav .top_kv_nav_main {
-  display: flex;
-  margin-left: 100px;
-}
-
-.sidebar .top_kv_nav .top_kv_nav_main li {
-  font-size: 36px;
-  font-family: yumincho;
-  writing-mode: vertical-rl;
-  display: flex;
-  margin-right: 20px;
-}
-
-.top_kv_text {
-  font-size: 15px;
-  font-family: yumincho;
-  text-decoration: underline;
-  margin-top: 15px;
+  background-color: #1B1A19;
 }
 
 /* footer*/
@@ -184,49 +21,99 @@ body {
 
 .top_kv_text {
   font-family: yumincho;
-  font-size: 15px;
-  display: flex;
-  margin-left: 100px;
-}
-
-.top_kv_sub {
-  display: flex;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 15px;
+  width: 200px;
+  color: #D0C5AB;
+  border: solid 2px #D0C5AB;
+  border-radius: 20px;
 }
 
 .top_kv_img {
-  margin-top: 10px;
+  width: 100px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  /* ここにSP向けのCSS指定 */
+  .top_kv_text {
+    font-size: 18px;
+    border: solid 1px #D0C5AB;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+  }
+  .top_kv_img {
+    margin-left: 10px;
+    width: 30px;
+  }
+}
 .header {
   height: 200px;
   width: 100%;
+  position: relative;
 }
-
 .header_kv_logo img {
   height: 200px;
+  width: auto;
   position: fixed;
   z-index: 10;
-  top: 6.4rem;
-  left: 12.8rem;
+  top: 50px;
+  left: 150px;
   display: grid;
   justify-content: start;
 }
-
-.header_kv_text {
+.header_kv_logo img_kv_text {
   position: relative;
+}
+.header_kv_logo img_kv_text_txt {
+  font-size: 36px;
+  color: #D0C5AB;
+  font-family: yumincho;
+  line-height: 1.5;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 50px;
+  right: 150px;
+  text-align: justify;
 }
 
 .header_kv_text_txt {
   font-size: 36px;
   font-family: yumincho;
+  color: #D0C5AB;
   line-height: 1.5;
   writing-mode: vertical-rl;
   position: fixed;
-  top: 90px;
-  right: 640px;
+  top: 60px;
+  right: 150px;
 }
 
+@media screen and (max-width: 768px) {
+  /* ここにSP向けのCSS指定 */
+  .header {
+    position: relative;
+  }
+  .header_kv_logo img {
+    left: 30px;
+    top: 20px;
+  }
+  .header_kv_logo img_kv_text {
+    position: relative;
+  }
+  .header_kv_text_txt {
+    right: 30px;
+    top: 300px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header_kv_logo img {
+    left: 30px;
+  }
+}
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -600,4 +487,203 @@ th {
 th {
   text-align: left;
   font-weight: bold;
-} /*# sourceMappingURL=app.css.map */
+} 
+body {
+  background-repeat: repeat;
+}
+
+.inner {
+  width: 1400px; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sidebar {
+  padding-left: 110px;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 300px;
+}
+.sidebar.top_kv_nav .top_kv_nav_main {
+  display: flex;
+  margin-left: 100px;
+}
+.sidebar.top_kv_nav .top_kv_nav_mainli {
+  font-size: 36px;
+  font-family: yumincho;
+  writing-mode: vertical-rl;
+  display: flex;
+  margin-right: 20px;
+}
+
+.top_kv_nav {
+  display: flex;
+}
+.top_kv_nav_main {
+  display: flex;
+}
+.top_kv_nav_main li {
+  margin-right: 20px;
+}
+.top_kv_nav_main li a {
+  writing-mode: vertical-rl;
+  font-size: 28px;
+  color: #D0C5AB;
+  font-family: yumincho;
+}
+
+.top_kv_sub {
+  display: flex;
+  justify-items: center;
+}
+
+.main {
+  margin-top: 800px;
+  height: 1030px;
+  position: relative;
+}
+
+.top_kv_catch {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  font-family: yumincho;
+  float: right;
+  position: fixed;
+  top: 110px;
+  left: 1400px;
+}
+
+.top_inner_contents_text {
+  display: block;
+  font-family: yumincho;
+  line-height: 1.5;
+  margin-bottom: 180px;
+}
+.top_inner_contents_text_txt {
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 600px;
+  line-height: 2.5;
+  color: #D0C5AB;
+}
+.top_inner_contents_textnav {
+  display: block;
+}
+
+.copyright-text {
+  text-align: center;
+}
+
+.top_inner_contents_nav_content {
+  display: inline-block;
+  width: 100%;
+}
+
+.top_inner_contents_nav_item {
+  display: block;
+  font-size: 24px;
+  font-family: yumincho;
+}
+
+.top_inner_contents_nav_item a {
+  display: block;
+  color: #D0C5AB;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-left: 600px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px var(--color-line7);
+}
+
+@media screen and (max-width: 767px) {
+  /* ここにSP向けのCSS指定 */
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    left: 0px;
+    bottom: 0;
+  }
+  .top_inner_contents {
+    padding-left: 80px;
+  }
+  .top_kv_sub {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .top_kv_nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .top_inner_contents_text {
+    margin-bottom: 40px;
+  }
+  .top_inner_contents_text_txt {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .top_inner_contents_nav_item a {
+    padding-left: 0;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .top_kv_nav_main li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .top_kv_nav_main li a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main {
+    margin-top: 950px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* ここにタブレット向けのCSS指定 */
+  .sidebar {
+    bottom: 20px;
+    padding: 0;
+    left: 50px;
+    width: 250px;
+  }
+  .top_inner_contents {
+    padding-left: 300px;
+    padding-right: 100px;
+  }
+  .top_kv_sub {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .top_kv_nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .top_inner_contents_text_txt {
+    padding: 0;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .top_inner_contents_nav_item a {
+    padding-left: 0;
+    text-align: left;
+    font-size: 25px;
+  }
+  .top_kv_nav_main li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .top_kv_nav_main li a {
+    font-size: 23px;
+  }
+}/*# sourceMappingURL=app.css.map */
