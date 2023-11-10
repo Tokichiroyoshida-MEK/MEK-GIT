@@ -13,12 +13,11 @@
         wp_deregister_script('jquery');
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0');
     ?>
-    <title class="title_color">MouthEarKing</title>
+    <title class="title_color">まるふく</title>
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>><?php wp_body_open(); ?>
-<header>
 <!-- ここにヘッダー記述 -->
 <header>
     <header class="header">

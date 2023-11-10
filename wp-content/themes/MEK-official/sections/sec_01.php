@@ -27,22 +27,38 @@
                 <ul class="top_inner_contents_nav_content">
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">ご挨拶を見る</a>
+                            <a href="#">ご挨拶を見る
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
+                                </span>
+                            </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">こだわりを見る</a>
+                            <a href="#">こだわりを見る
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
+                                </span>
+                            </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">店舗案内を見る</a>
+                            <a href="#">店舗案内を見る
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
+                                </span>
+                            </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="">ご予約を見る</a>
+                            <a href="">ご予約を見る
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
+                                </span>
+                            </a>
                         </p>
                     </li>
                 </ul>
@@ -55,7 +71,7 @@
                     <ul class="top_kv_nav_main">
                         <li><a href="#about">ご挨拶</a></li>
                         <li><a href="concept">こだわり</a></li>
-                        <li><a href="concept">店舗案内</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#picky">店舗案内</a></li>
                     </ul>
                 </nav>
                 <div class="top_kv_sub">
