@@ -27,7 +27,7 @@
                 <ul class="top_inner_contents_nav_content">
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">ご挨拶を見る
+                            <a href="<?php echo esc_url( home_url( '//' ) ); ?>">こだわりを見る
                                 <span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                                 </span>
@@ -36,7 +36,7 @@
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">こだわりを見る
+                            <a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書きを見る
                                 <span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                                 </span>
@@ -45,7 +45,7 @@
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="#">店舗案内を見る
+                            <a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内を見る
                                 <span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                                 </span>
@@ -54,7 +54,7 @@
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="">ご予約を見る
+                            <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">ご予約を見る
                                 <span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                                 </span>
@@ -69,17 +69,18 @@
             <div class="sidebar">
                 <nav class="top_kv_nav">
                     <ul class="top_kv_nav_main">
-                        <li><a href="#about">ご挨拶</a></li>
-                        <li><a href="concept">こだわり</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#picky">店舗案内</a></li>
+                        <li><a href="#about">こだわり</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書き</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内</a></li>
                     </ul>
                 </nav>
                 <div class="top_kv_sub">
                     <p class="top_kv_text">
-                        <span><a href="">ご予約</a></span>
+                        <span><a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">ご予約</a></span>
                     </p>
                     <p class="top_kv_img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.png" alt="" height="24px" width="24px">
+                        <a href="https://www.instagram.com/sushi_marufuku/"></a>
                     </p>
                 </div>
             </div>

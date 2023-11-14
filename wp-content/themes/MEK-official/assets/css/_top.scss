@@ -2,6 +2,18 @@
 body {
 background-repeat: repeat;
 }
+
+header{
+background-color: #1B1A19;
+}
+.main{
+background-color: #1B1A19;
+margin-top: 800px;
+position: relative;
+}
+.footer{
+background-color: #1B1A19;
+}
 .inner{
     width: 1400px; /* 好きな幅 */
     max-width: 100%;
@@ -48,11 +60,6 @@ display: flex;
     justify-items: center;
 }
 // ーーーーーーーーーーーメインーーーーーーーーーーーー
-.main{
-    margin-top: 800px;
-    height: 1030px;
-    position: relative;
-}
 .top_kv_catch{
     writing-mode: vertical-rl;
     font-size: 36px;

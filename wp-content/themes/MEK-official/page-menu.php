@@ -10,29 +10,32 @@
     <title>まるふく お品書き</title>
 </head>
 <!-- ここからボディ -->
+<?php get_header ();?>
     <body>
         <!-- ここからheader -->
         <header class="header_01">
-            <div class="header_01_logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
-            </div>
-            <div class="header_01_nav">
-                <ul class="header_01_nav_main">
-                    <li><a href="">こだわり</a></li>
-                    <li><a href="">お品書き</a></li>
-                    <li><a href="">店舗案内</a></li>
-                    <li><a href="">トップ</a></li>
-                </ul>
-            </div>
-            <div class="header_01_reserve">
-                <a href="">ご予約</a>
+            <div class="header_01_wrapper">
+                <div class="header_01_logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+                </div>
+                <div class="header_01_nav">
+                    <ul class="header_01_nav_main">
+                        <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">こだわり</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書き</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">トップ</a></li>
+                    </ul>
+                </div>
+                <div class="header_01_reserve">
+                    <a href="">ご予約</a>
+                </div>
             </div>
         </header>
         <!-- ここからmain -->
-        <main class="main_01 inner">
+        <main class="main_01 inner" id="menu">
             <h1 class="main_01_title">お品書き</h1>
-                <div class="main_01_txt inner">
-                    <p>
+                <div class="main_01_txt inner_01">
+                    <p class="main_01_txt_sub">
                         お客様一人ひとりのご期待にお応えできるよう、細部にまでこだわり抜いたおもてなしを心がけております。<br>
                         初めてのご来店であろうと、長年にわたる常連様であろうと、鮨まるふくでは、お客様にとって忘れがたい体験を提供することをお約束いたします。<br>
                         ここには新しい発見と、感動があります。<br>
@@ -51,6 +54,6 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/access.png" alt="">
                 </div>
         </main>
-
     </body>
+    <?php get_footer();?>
 </html>
