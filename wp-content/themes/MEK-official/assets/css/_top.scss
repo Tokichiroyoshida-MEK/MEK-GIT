@@ -1,6 +1,7 @@
 // ーーーーーーーーーーー背景動画ーーーーーーーーーーーー
 body {
 background-repeat: repeat;
+
 }
 
 header{
@@ -28,6 +29,7 @@ background-color: #1B1A19;
     bottom: 50px;
     left: 50px;
     width: 300px;
+    z-index: 10;
     &.top_kv_nav .top_kv_nav_main{
         display: flex;
         margin-left: 100px;
@@ -52,6 +54,10 @@ display: flex;
                     color: #D0C5AB;
                     font-family: yumincho;
                     }
+                    a:hover{
+                        opacity: 0.5;
+                        transition:0.3s
+                    }
         }
     }
 }
@@ -68,6 +74,10 @@ display: flex;
     position: fixed;
     top: 110px;
     left: 1400px;
+}
+.top_inner_contents{
+position: relative;
+z-index: 10;
 }
 .top_inner_contents_text{
     display: block;
@@ -110,6 +120,9 @@ display: flex;
     padding-bottom: 25px;
     border-bottom: 1px solid #555;
     }
+    .top_inner_contents_nav_item a:hover{
+        opacity: 0.5;
+    }
     .top_inner_contents_nav_item a span img{
     position: inherit;
     width: 32px;
@@ -122,9 +135,6 @@ display: flex;
             padding: 20px;
             left: 0px;
             bottom: 0;
-        }
-        .top_inner_contents {
-            padding-left: 80px;
         }
         .top_kv_sub {
             display: flex;
@@ -173,7 +183,7 @@ display: flex;
         .sidebar{
             bottom: 20px;
             padding: 0;
-            left: 50px;
+            left: 0px;
             width: 250px;
         }
         .top_inner_contents {

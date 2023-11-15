@@ -1,4 +1,9 @@
 <main class="main">
+
+<div class="video-wrap">
+  <video src="<?php echo get_template_directory_uri(); ?>/assets/mov/top_pc.webm" autoplay loop muted playsinline type="video/webm">
+  </video>
+</div>
     <section class="top inner">
         <div class="top_inner_contents">
             <div class="top_inner_contents_text">
@@ -27,7 +32,7 @@
                 <ul class="top_inner_contents_nav_content">
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
-                            <a href="<?php echo esc_url( home_url( '//' ) ); ?>">こだわりを見る
+                            <a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわりを見る
                                 <span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="">
                                 </span>
@@ -69,7 +74,7 @@
             <div class="sidebar">
                 <nav class="top_kv_nav">
                     <ul class="top_kv_nav_main">
-                        <li><a href="#about">こだわり</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわり</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書き</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内</a></li>
                     </ul>
@@ -79,8 +84,9 @@
                         <span><a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">ご予約</a></span>
                     </p>
                     <p class="top_kv_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.png" alt="" height="24px" width="24px">
-                        <a href="https://www.instagram.com/sushi_marufuku/"></a>
+                        <a href="https://www.instagram.com/sushi_marufuku/">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.png" alt="" height="24px" width="24px">
+                        </a>
                     </p>
                 </div>
             </div>

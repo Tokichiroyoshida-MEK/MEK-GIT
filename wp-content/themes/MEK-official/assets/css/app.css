@@ -422,6 +422,7 @@ header {
   bottom: 50px;
   left: 50px;
   width: 300px;
+  z-index: 10;
 }
 .sidebar.top_kv_nav .top_kv_nav_main {
   display: flex;
@@ -450,6 +451,10 @@ header {
   color: #D0C5AB;
   font-family: yumincho;
 }
+.top_kv_nav_main li a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
 
 .top_kv_sub {
   display: flex;
@@ -464,6 +469,11 @@ header {
   position: fixed;
   top: 110px;
   left: 1400px;
+}
+
+.top_inner_contents {
+  position: relative;
+  z-index: 10;
 }
 
 .top_inner_contents_text {
@@ -513,6 +523,10 @@ header {
   border-bottom: 1px solid #555;
 }
 
+.top_inner_contents_nav_item a:hover {
+  opacity: 0.5;
+}
+
 .top_inner_contents_nav_item a span img {
   position: inherit;
   width: 32px;
@@ -526,9 +540,6 @@ header {
     padding: 20px;
     left: 0px;
     bottom: 0;
-  }
-  .top_inner_contents {
-    padding-left: 80px;
   }
   .top_kv_sub {
     display: flex;
@@ -578,7 +589,7 @@ header {
   .sidebar {
     bottom: 20px;
     padding: 0;
-    left: 50px;
+    left: 0px;
     width: 250px;
   }
   .top_inner_contents {
@@ -656,9 +667,23 @@ header {
   line-height: 1.5;
   writing-mode: vertical-rl;
   position: fixed;
-  top: 60px;
-  right: 150px;
+  top: 40px;
+  right: 100px;
   z-index: 10;
+}
+
+.video-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -674,8 +699,8 @@ header {
     position: relative;
   }
   .header_kv_text_txt {
-    right: 30px;
-    top: 220px;
+    right: 20px;
+    top: 20px;
     font-size: 26px;
   }
 }
@@ -701,10 +726,20 @@ header {
   border-radius: 20px;
 }
 
+.top_kv_text:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
 .top_kv_img {
   width: 100px;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.top_kv_img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -938,6 +973,249 @@ p.main_01_txt_description {
     position: absolute;
     bottom: 25px;
     left: calc(50% - 208px);
+  }
+  .main_01_img {
+    display: none;
+  }
+}
+/* 全体 */
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px;
+  max-width: 100%;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.inner_01 {
+  width: 600px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* header */
+.header_01 {
+  background-color: #D1C8B4;
+}
+.header_01_wrapper {
+  text-align: center;
+  width: 150px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-left: 1px solid #949FAB;
+}
+
+.header_01_logo {
+  border-bottom: 1px solid #949FAB;
+}
+
+.header_01_logo img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 140px;
+}
+
+.header_01_nav_main {
+  display: inline-block;
+}
+
+.header_01_nav_main li a {
+  height: 140px;
+  writing-mode: vertical-rl;
+  color: #1B1A19;
+  font-family: YuMincho;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.header_01_reserve {
+  display: inline-block;
+}
+
+.header_01_reserve a {
+  height: 140px;
+  writing-mode: vertical-rl;
+  color: #1B1A19;
+  font-family: YuMincho;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: normal;
+}
+
+/* main */
+main {
+  background-color: #D1C8B4;
+}
+
+h1.main_01_title {
+  color: #949FAB;
+  text-align: left;
+  font-family: YuMincho;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  position: relative;
+}
+
+h1.main_01_title::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  display: inline-block;
+  background-color: #949FAB;
+  position: absolute;
+  bottom: 24px;
+  left: calc(50% - 318px);
+}
+
+.main_01_txt_sub {
+  font-size: 18px;
+  color: #1B1A19;
+  text-align: left;
+  font-family: YuMincho;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+h2.main_01_txt_title {
+  color: #1B1A19;
+  text-align: left;
+  font-family: YuMincho;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+p.main_01_txt_description {
+  color: #1B1A19;
+  text-align: left;
+  font-family: YuMincho;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+
+.main_01_img {
+  position: relative;
+  z-index: -1;
+}
+.main_01_img img {
+  position: fixed;
+  top: 30px;
+  left: 0;
+}
+
+/* ここからSP */
+@media screen and (max-width: 767px) {
+  .inner {
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 330px;
+  }
+  .inner_01 {
+    width: 230px;
+  }
+  /* header */
+  .header_01_wrapper {
+    width: 40px;
+    border-left: 1px solid #949FAB;
+  }
+  .header_01_logo img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 70px;
+  }
+  .header_01_nav_main li a {
+    height: 85px;
+    font-size: 16px;
+  }
+  .header_01_reserve a {
+    height: 140px;
+    font-size: 20px;
+  }
+  /* main */
+  h1.main_01_title {
+    font-size: 28px;
+    margin-top: 10px;
+    position: relative;
+  }
+  h1.main_01_title::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    bottom: 19px;
+    left: calc(50% - 23px);
+  }
+  .main_01_txt_sub {
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+  }
+  h2.main_01_txt_title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  p.main_01_txt_description {
+    font-size: 16px;
+  }
+  .main_01_img {
+    display: none;
+  }
+}
+/* ここからタブレット */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 34px;
+    width: 800px;
+  }
+  .inner_01 {
+    width: 560px;
+  }
+  /* header */
+  .header_01_wrapper {
+    width: 110px;
+    border-left: 1px solid #949FAB;
+  }
+  h1.main_01_title::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 208px);
+  }
+  .main_01_txt_sub {
+    font-size: 18px;
+    margin-bottom: 70px;
   }
   .main_01_img {
     display: none;

@@ -20,14 +20,14 @@
                 </div>
                 <div class="header_01_nav">
                     <ul class="header_01_nav_main">
-                        <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">こだわり</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわり</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書き</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内</a></li>
                         <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">トップ</a></li>
                     </ul>
                 </div>
                 <div class="header_01_reserve">
-                    <a href="">ご予約</a>
+                    <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">ご予約</a>
                 </div>
             </div>
         </header>

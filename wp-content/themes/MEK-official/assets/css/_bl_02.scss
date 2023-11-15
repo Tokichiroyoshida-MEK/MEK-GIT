@@ -13,10 +13,18 @@
     border: solid 2px #D0C5AB;
     border-radius: 20px;
     }
+    .top_kv_text:hover{
+        opacity: 0.5;
+        transition:0.3s
+    }
     .top_kv_img{
     width: 100px;
     margin-top: 20px;
     margin-left: 20px;
+    }
+    .top_kv_img:hover{
+        opacity: 0.5;
+        transition:0.3s
     }
     @media screen and (max-width:768px) {
         /* ここにSP向けのCSS指定 */
