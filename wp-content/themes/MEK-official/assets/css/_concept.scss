@@ -33,8 +33,8 @@
 .header_01_logo img{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 40px;
-    height: 140px;
+    width: 60px;
+    height: 60px;
 }
 .header_01_nav_main{
     display: inline-block;
@@ -134,7 +134,7 @@ p.main_01_txt_description{
     z-index: -1;
     & img{
         position: fixed;
-        top: 30px;
+        top: 0;
         left: 0;
     }
 }

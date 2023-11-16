@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="main_01_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/access.png" alt="">
                 </div>
         </main>
     </body>

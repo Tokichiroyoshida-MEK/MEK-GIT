@@ -399,21 +399,21 @@ header {
 }
 
 .main {
-  background-color: #1B1A19;
-  margin-top: 800px;
   position: relative;
+  height: 100%;
 }
 
 .footer {
   background-color: #1B1A19;
 }
 
-.inner {
+.inner01 {
   width: 1400px; /* 好きな幅 */
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
+  margin-top: 600px;
 }
 
 .sidebar {
@@ -487,6 +487,7 @@ header {
   text-align: left;
   padding-left: 600px;
   line-height: 2.5;
+  letter-spacing: 1.5px;
   color: #D0C5AB;
 }
 .top_inner_contents_textnav {
@@ -500,7 +501,7 @@ header {
 .top_inner_contents_nav_content {
   display: inline-block;
   width: 100%;
-  margin-bottom: 180px;
+  padding-bottom: 100px;
 }
 
 .top_inner_contents_nav_item {
@@ -515,31 +516,29 @@ header {
 
 .top_inner_contents_nav_item a {
   display: block;
+  position: relative;
   color: #D0C5AB;
   font-size: 30px;
   text-align: left;
   margin-bottom: 30px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #555;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D0C5AB;
 }
 
 .top_inner_contents_nav_item a:hover {
   opacity: 0.5;
 }
 
-.top_inner_contents_nav_item a span img {
-  position: inherit;
-  width: 32px;
-  height: 32px;
-}
-
 @media screen and (max-width: 767px) {
   /* ここにSP向けのCSS指定 */
+  .inner01 {
+    margin-top: 750px;
+  }
   .sidebar {
     width: 100%;
     padding: 20px;
     left: 0px;
-    bottom: 0;
+    bottom: 10px;
   }
   .top_kv_sub {
     display: flex;
@@ -551,6 +550,9 @@ header {
     margin: 0 auto;
     justify-content: center;
   }
+  .top_inner_contents_nav_content {
+    width: 90%;
+  }
   .top_inner_contents_text {
     margin-bottom: 40px;
   }
@@ -558,6 +560,7 @@ header {
     padding: 0;
     font-size: 14px;
     line-height: 1.5;
+    letter-spacing: 1.5px;
   }
   .top_inner_contents_nav_item p {
     padding-left: 0;
@@ -584,7 +587,7 @@ header {
     margin-top: 950px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1590px) {
   /* ここにタブレット向けのCSS指定 */
   .sidebar {
     bottom: 20px;
@@ -605,6 +608,12 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content: center;
+  }
+  .top_kv_text {
+    width: 100px !important;
+  }
+  .top_kv_img {
+    width: 40px !important;
   }
   .top_inner_contents_text_txt {
     padding: 0;
@@ -628,6 +637,11 @@ header {
   .top_inner_contents_nav_item a span img {
     width: 16px;
     height: 16px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1750px) {
+  .video {
+    height: 100%;
   }
 }
 .header {
@@ -680,12 +694,23 @@ header {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 video {
+  position: relative;
   width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media screen and (min-width: 1024px) {
+  .sp {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   /* ここにSP向けのCSS指定 */
   .header {
@@ -699,14 +724,23 @@ video {
     position: relative;
   }
   .header_kv_text_txt {
-    right: 20px;
-    top: 20px;
+    right: 30px;
+    top: 60px;
     font-size: 26px;
+  }
+  .pc {
+    display: none;
+  }
+  .sp video {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header_kv_logo img {
     left: 30px;
+  }
+  .pc {
+    display: none;
   }
 }
 /* footer*/
@@ -1017,8 +1051,8 @@ p.main_01_txt_description {
 .header_01_logo img {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 40px;
-  height: 140px;
+  width: 60px;
+  height: 60px;
 }
 
 .header_01_nav_main {
@@ -1260,8 +1294,8 @@ p.main_01_txt_description {
 .header_01_logo img {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 40px;
-  height: 140px;
+  width: 60px;
+  height: 60px;
 }
 
 .header_01_nav_main {
@@ -1369,7 +1403,7 @@ p.main_01_txt_description {
 }
 .main_01_img img {
   position: fixed;
-  top: 30px;
+  top: 0;
   left: 0;
 }
 
