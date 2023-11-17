@@ -16,7 +16,9 @@
         <header class="header_01">
             <div class="header_01_wrapper">
                 <div class="header_01_logo">
+                <a href="<?php echo esc_url( home_url( '//' ) ); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+                </a>
                 </div>
                 <div class="header_01_nav">
                     <ul class="header_01_nav_main">

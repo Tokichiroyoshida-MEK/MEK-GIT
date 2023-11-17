@@ -9,8 +9,8 @@
 
 <main class="main">
     <section class="top inner01">
-    <div class="top_inner_contents">
-            <div class="top_inner_contents_text">
+    <div class="top_inner_contents fadein">
+            <div class="top_inner_contents_text ">
                 <p class="top_inner_contents_text_txt">
                     いらっしゃいませ、「鮨まるふく」へようこそ。<br>
                     当店は、熟成鮨の伝統を守りながら、新たな美味しさを探究する場所です。<br>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="top_inner_contents_nav">
-                <ul class="top_inner_contents_nav_content">
+                <ul class="top_inner_contents_nav_content fadein">
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
                             <a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわりを見る
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-            <div class="sidebar">
+            <div class="sidebar fadein">
                 <nav class="top_kv_nav">
                     <ul class="top_kv_nav_main">
                         <li><a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわり</a></li>
