@@ -26,7 +26,7 @@ function my_scripts_method() {
     // js読み込み
     wp_enqueue_script(
         'custom_script',
-        get_template_directory_uri() . '/assets/js/mek-001.js',
+        get_template_directory_uri() . '/assets/js/marufuku-001.js',
         );
     }
     add_action('wp_enqueue_scripts', 'my_scripts_method');
