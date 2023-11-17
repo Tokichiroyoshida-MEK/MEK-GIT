@@ -1,14 +1,11 @@
 // ーーーーーーーーーーー背景動画ーーーーーーーーーーーー
 body {
 background-repeat: repeat;
-
 }
-
 header{
 background-color: #1B1A19;
 }
 .main{
-// background-color: #1B1A19;
 position: relative;
 height: 100%;
 }
@@ -16,14 +13,23 @@ height: 100%;
 background-color: #1B1A19;
 }
 .inner01{
-    width: 1400px; /* 好きな幅 */
-    max-width: 90%;
-    margin: 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 600px;
-    }
+width: 1400px; /* 好きな幅 */
+max-width: 90%;
+margin: 0 auto;
+padding-left: 24px;
+padding-right: 24px;
+margin-top: 600px;
+}
 // ーーーーーーーーーーースライドバーーーーーーーーーーーー
+.fadein {
+    opacity : 0;
+    transform : translate(0, 100px);
+    transition : all 2.5s;
+}
+.fadein.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
 .sidebar{
     padding-left: 110px;
     position: fixed;
@@ -79,6 +85,7 @@ display: flex;
 .top_inner_contents{
 position: relative;
 z-index: 10;
+text-align: center;
 }
 .top_inner_contents_text{
     display: block;
@@ -112,6 +119,7 @@ z-index: 10;
     }
     .top_inner_contents_nav_item p{
         padding-left: 600px;
+        position: relative;
     }
     .top_inner_contents_nav_item a{
     display: block;
@@ -121,10 +129,15 @@ z-index: 10;
     text-align: left;
     margin-bottom: 30px;
     padding-bottom: 15px;
-    border-bottom: 1px solid  #D0C5AB;;
+    border-bottom: 1px solid  #D0C5AB;
     }
     .top_inner_contents_nav_item a:hover{
         opacity: 0.5;
+    }
+    .top_inner_contents_nav_item a img{
+    position: absolute;
+    top: 5px;
+    right: 100px;
     }
 @media screen and (max-width:767px) {
         /* ここにSP向けのCSS指定 */
@@ -133,9 +146,9 @@ z-index: 10;
         }
         .sidebar{
             width: 100%;
-            padding: 20px;
+            padding: 20px 20px 0px 20px;
             left: 0px;
-            bottom: 10px;
+            bottom: 65px;
         }
         .top_kv_sub {
             display: flex;
@@ -178,12 +191,15 @@ z-index: 10;
         .top_kv_nav_main li a {
             font-size: 18px;
         }
+        .top_inner_contents_nav_item a {
+            padding-bottom: 10px;
+        }
 }
 @media screen and (min-width:1920px) {
 .main{margin-top: 950px;
 }
 }
-@media screen and (min-width:768px) and ( max-width:1590px) {
+@media screen and (min-width:768px) and ( max-width:1200px) {
         /* ここにタブレット向けのCSS指定 */
         .sidebar{
             bottom: 20px;
@@ -192,7 +208,7 @@ z-index: 10;
             width: 250px;
         }
         .top_inner_contents {
-        padding-left: 300px;
+        padding-left: 170px;
         padding-right: 100px;
         }
         .top_kv_sub {

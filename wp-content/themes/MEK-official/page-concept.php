@@ -19,11 +19,13 @@
 <header class="header_01">
             <div class="header_01_wrapper">
                 <div class="header_01_logo">
+                <a href="<?php echo esc_url( home_url( '//' ) ); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+                    </a>
                 </div>
                 <div class="header_01_nav">
                     <ul class="header_01_nav_main">
-                        <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">こだわり</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわり</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書き</a></li>
                         <li><a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内</a></li>
                         <li><a href="<?php echo esc_url( home_url( '//' ) ); ?>">トップ</a></li>
@@ -65,7 +67,7 @@
                     </p>
                 </div>
 
-                    <h1 class="main_01_title">インタビュー</h1>
+                    <h1 class="main_01_title interview">インタビュー</h1>
                 <div class="main_01_txt inner_01">
                     <p class="main_01_txt_sub">
                     </p>
