@@ -52,8 +52,12 @@
                         </p>
                 </div>
 
-                <div class="main_01_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.png" alt="">
+                <div class="reserve_btn_wrapper">
+                    <div class="reserve_btn">
+                        <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">
+                            ご予約はこちら
+                        </a>
+                    </div>
                 </div>
         </main>
     </body>
