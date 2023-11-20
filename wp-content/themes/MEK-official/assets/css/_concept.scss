@@ -1,4 +1,7 @@
 /* 全体 */
+.body{
+height: 100%;
+}
 .inner{
     margin: 0 auto;
     text-align: center;
@@ -141,14 +144,14 @@ p.main_01_txt_description{
     letter-spacing: 1.5px;
     line-height: normal;
 }
-.main_01_img{
-    position: relative;
-    z-index: -1;
-    & img{
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
+p.main_01_txt_name{
+font-size: 20px;
+color: #1B1A19;
+text-align: right;
+line-height: 1.5;
+}
+p.main_01_txt_name span{
+font-weight: 600;
 }
 @media screen and (max-width:1440px){
 .main_01_img{

@@ -2,8 +2,8 @@
     <header class="header">
         <div class="header_kv_text">
             <h1 class="header_kv_text_txt fadein">
-                温かみと高級感が<br>
-                共存する鮨の宿
+            究極の旨味を
+            <br>追求する熟成鮨
             </h1>
         </div>
     </header>
