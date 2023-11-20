@@ -138,6 +138,30 @@ p.main_01_txt_description{
         left: 0;
     }
 }
+.reserve_btn_wrapper{
+    text-align: center;
+}
+.reserve_btn{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    color:#1B1A19;
+    background-color:#949FAB;
+    width: 300px;
+    height: 100%;
+    box-shadow: 0 0 1px 1px rgba(27,26,25);
+}
+.reserve_btn:hover{
+    opacity: 0.5;
+}
+.reserve_btn a{
+    display: block;
+    font-size: 20px;
+    padding: 30px 30px 30px 30px;
+    font-family: YuMincho;
+    font-weight: 600;
+
+}
 
 /* ここからSP */
 @media screen and (max-width:767px) {

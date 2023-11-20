@@ -37,10 +37,9 @@
         <main class="main_01 inner">
             <h1 class="main_01_title">店舗案内</h1>
                 <div class="main_01_txt inner_01">
-                    <h2 class="main_01_txt_title">住所</h2>
+                    <h2 class="main_01_txt_title">店名</h2>
                         <p class="main_01_txt_description">
-                            東京都杉並区西荻窪3-17-4 第五ＰＲビル 1F<br>
-                            050-5589-9745
+                            鮨　まるふく
                         </p>
                     <h2 class="main_01_txt_title">営業時間</h2>
                         <p class="main_01_txt_description">
@@ -51,17 +50,33 @@
                         </p>
                     <h2 class="main_01_txt_title">定休日</h2>
                         <p class="main_01_txt_description">
-                            日曜定休 月曜祝日の場合、日曜営業で月（祝）はお休みです
+                            ＊週末3連休 (祝日) の場合、日曜営業で月曜はお休みです。
+                        </p>
+                    <h2 class="main_01_txt_title">アクセス</h2>
+                        <p class="main_01_txt_description">
+                            東京都杉並区西荻窪3-17-4 第五ＰＲビル 1F<br>
+                            ＊西荻窪駅南口から徒歩3-5分
                         </p>
                     <h2 class="main_01_txt_title">支払い方法</h2>
                         <p class="main_01_txt_description">
                             現金、カード可（VISA、Master、AMEX、JCB、Diners）、<br>
                             QRコード決済可（PayPay）
                         </p>
+                    <h2 class="main_01_txt_title">お問い合わせ</h2>
+                        <p class="main_01_txt_description">
+                            050-5589-9745
+                        </p>
+                        <h2 class="main_01_txt_title">予約</h2>
+                        <p class="main_01_txt_description">
+                            完全予約制
+                        </p>
                 </div>
-
-                <div class="main_01_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/access.png" alt="">
+                <div class="reserve_btn_wrapper">
+                    <div class="reserve_btn">
+                        <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">
+                            ご予約はこちら
+                        </a>
+                    </div>
                 </div>
         </main>
     </body>
