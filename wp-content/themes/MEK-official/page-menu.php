@@ -36,8 +36,8 @@
         <!-- ここからmain -->
         <main class="main_01 inner" id="menu">
             <h1 class="main_01_title">お品書き</h1>
-                <div class="main_01_txt inner_01">
-                    <div class="food">
+                <div class="main_01_txt slide_wrapper inner_01">
+                    <div class="food slide">
                         <h2 class="main_01_txt_title">おまかせコース<br>22,000円（税込）</h2>
                             <p class="main_01_txt_description">
                             四季折々の走りや旬にこだわる<br>新鮮な素材を全国各地より厳選。<br>
@@ -48,7 +48,7 @@
                             </p>
                     </div>
 
-                    <div class="drink">
+                    <div class="drink slide">
                         <h2 class="main_01_txt_title">お飲み物</h2>
                             <p class="main_01_txt_description">
                                 利き酒師が選んだこだわりの、<br>
@@ -66,7 +66,7 @@
                     また、香水・整髪料等の強い香りをまとってのご来店はご遠慮いただけますようお願いします。
 
                 </p>
-                <div class="reserve_btn_wrapper">
+                <div class="reserve_btn_wrapper inner_01">
                     <div class="reserve_btn">
                         <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">
                             ご予約はこちら
