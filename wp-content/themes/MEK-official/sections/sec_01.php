@@ -15,9 +15,7 @@
                 【飽くなき探究心と旨味への情熱】<br>
                 伝統を守りながらも、さらなる進化を追い求め続ける。<br>
                 「鮨 まるふく」しか提供できない“究極の熟成鮨”をご堪能ください。
-
             </div>
-
             <div class="top_inner_contents_nav">
                 <ul class="top_inner_contents_nav_content fadein">
                     <li class="top_inner_contents_nav_item">
