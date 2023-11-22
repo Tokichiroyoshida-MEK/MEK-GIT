@@ -51,14 +51,18 @@
                         利き酒師こだわりのお酒と共に、心地良い会話をお楽しみいただくことで、食の体験はさらに豊かなものとなるでしょう。
                         どうぞ、当店でのひと時をごゆっくりとお楽しみください。
                         </p>
-                        <p class="main_01_txt_name">
-                        <span>鮨 まるふく</span><br>
-                        大将   伊佐山 豊<br>
-                        女将   伊佐山 まどか
-                        </p>
+                        <div class="main_01_txt_name inner_01">
+                            <p>
+                                <span>鮨 まるふく</span>
+                            <br>
+                                大将   伊佐山 豊
+                            <br>
+                                女将   伊佐山 まどか
+                            </p>
+                        </div>
                 </div>
                 <div class="reserve_btn_wrapper inner_01">
-                    <div class="reserve_btn">
+                    <div class="reserve_btn_01">
                         <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">
                             ご予約はこちら
                         </a>

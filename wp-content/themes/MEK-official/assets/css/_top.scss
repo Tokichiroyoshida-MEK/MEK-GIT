@@ -42,7 +42,7 @@ margin-top: 600px;
         margin-left: 100px;
             &li{
                 font-size: 36px;
-                font-family: yumincho;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                 writing-mode: vertical-rl;
                 display: flex;
                 margin-right: 20px;
@@ -59,7 +59,7 @@ display: flex;
                     writing-mode: vertical-rl;
                     font-size: 28px;
                     color: #D0C5AB;
-                    font-family: yumincho;
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                     }
                     a:hover{
                         opacity: 0.5;
@@ -72,24 +72,68 @@ display: flex;
     display: flex;
     justify-items: center;
 }
+// ーーーーーーーーーーースクロールーーーーーーーーーーーー
+.scroll{
+    position: absolute;
+    z-index: 10;
+    top:50%;
+	right:50%;
+    animation: scroll 1s ease-in-out infinite;
+}
+@keyframes scroll{
+    0%{top:50%;}
+    50%{top:51%;}
+    100%{top:50%;}
+}
+.scroll span{
+	position: absolute;
+    z-index: 10;
+	left:-20px;
+	bottom:10px;
+	color: #D0C5AB;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+}
+.scroll:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background:#D0C5AB;
+    transform: skewX(-31deg);
+}
+.scroll:after{
+	content:"";
+	position: absolute;
+    z-index: 10;
+	bottom:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#D0C5AB;
+}
+
 // ーーーーーーーーーーーメインーーーーーーーーーーーー
 .top_kv_catch{
     writing-mode: vertical-rl;
     font-size: 36px;
-    font-family: yumincho;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     float: right;
     position: fixed;
     top: 110px;
     left: 1400px;
 }
 .top_inner_contents{
-position: relative;
-z-index: 10;
-text-align: center;
+    position: relative;
+    z-index: 10;
+    text-align: center;
 }
 .top_inner_contents_text{
     display: block;
-    font-family: yumincho;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     line-height: 1.5;
     margin-bottom: 80px;
     &_txt{
@@ -100,158 +144,190 @@ text-align: center;
         letter-spacing: 1.5px;
         color: #D0C5AB;
     }
-    &nav{
-        display: block;
-    }
+        &nav{
+            display: block;
+        }
 }
-    .copyright-text{
+.copyright-text{
     text-align: center;
-    }
-    .top_inner_contents_nav_content{
+}
+.top_inner_contents_nav_content{
     display: inline-block;
     width: 100%;
     padding-bottom: 100px;
-    }
-    .top_inner_contents_nav_item{
+}
+.top_inner_contents_nav_item{
     display: block;
     font-size: 24px;
-    font-family: yumincho;
-    }
-    .top_inner_contents_nav_item p{
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+.top_inner_contents_nav_item p{
         padding-left: 600px;
         position: relative;
-    }
-    .top_inner_contents_nav_item a{
-    display: block;
+        text-align: left;
+}
+.top_inner_contents_nav_item a{
+    width: 75%;
+    display: inline-block;
     position: relative;
     color: #D0C5AB;
     font-size: 30px;
     text-align: left;
     margin-bottom: 30px;
     padding-bottom: 15px;
+    text-decoration: none;
     border-bottom: 1px solid  #D0C5AB;
-    }
-    .top_inner_contents_nav_item a:hover{
-        opacity: 0.5;
-    }
-    .top_inner_contents_nav_item a img{
+}
+.top_inner_contents_nav_item a:hover{
+    opacity: 0.5;
+}
+.top_inner_contents_nav_item a img{
     position: absolute;
-    top: 5px;
-    right: 100px;
-    }
-
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+}
+/* ここにSP向けのCSS指定 */
 @media screen and (max-width:767px) {
-        /* ここにSP向けのCSS指定 */
-        .inner01{
-            margin-top: 750px;
-        }
-        .sidebar{
-            width: 100%;
-            padding: 20px 20px 0px 20px;
-            left: 0px;
-            bottom: 65px;
-        }
-        .top_kv_sub {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-        }
-        .top_kv_nav{
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-        }
-        .top_inner_contents_nav_content{
-            width: 90%;
-            }
-        .top_inner_contents_text{
-        margin-bottom: 40px;
-        }
-        .top_inner_contents_text_txt{
-        padding: 0;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 1.5px;
-        }
-        .top_inner_contents_nav_item p{
-            padding-left: 0;
-        }
-        .top_inner_contents_nav_item a {
-            text-align: left;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .top_inner_contents_nav_item a span img{
-            width: 16px;
-            height: 16px;
-            }
-        .top_kv_nav_main li {
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        .top_kv_nav_main li a {
-            font-size: 18px;
-        }
-        .top_inner_contents_nav_item a {
-            padding-bottom: 10px;
-        }
-    }
+.inner01{
+    margin-top: 750px;
+}
+.sidebar{
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    left: 0px;
+    bottom: 65px;
+}
+.top_kv_sub {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.top_kv_nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.top_inner_contents_nav {
+    text-align: left;
+}
+.top_inner_contents_nav_content{
+    width: 90%;
+}
+.top_inner_contents_text{
+    margin-bottom: 40px;
+}
+.top_inner_contents_text_txt{
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.top_inner_contents_nav_item p{
+    padding-left: 0;
+}
+.top_inner_contents_nav_item a {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.top_inner_contents_nav_item a span img{
+    width: 16px;
+    height: 16px;
+}
+.top_kv_nav_main li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.top_kv_nav_main li a {
+    font-size: 18px;
+}
+.top_inner_contents_nav_item a {
+    padding-bottom: 10px;
+    width: 100%;
+}
+.top_inner_contents_nav_item a img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+// ーーーーーーーーーーースクロールSPーーーーーーーーーーーー
+.scroll{
+    position: absolute;
+    z-index: 10;
+    top:50%;
+	right:10%;
+    animation: scroll 1s ease-in-out infinite;
+}
+@keyframes scroll{
+    0%{top:50%;}
+    50%{top:51%;}
+    100%{top:50%;}
+}
+}
+/* ここにPC1920px以上向けのCSS指定 */
 @media screen and (min-width:1920px) {
-.main{margin-top: 950px;
+.main{
+    margin-top: 950px;
 }
 }
+/* ここにタブレット向けのCSS指定 */
 @media screen and (min-width:768px) and ( max-width:1200px) {
-        /* ここにタブレット向けのCSS指定 */
-        .sidebar{
-            bottom: 20px;
-            padding: 0;
-            left: 0px;
-            width: 250px;
-        }
-        .top_inner_contents {
-        padding-left: 170px;
-        padding-right: 100px;
-        }
-        .top_kv_sub {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-        }
-        .top_kv_nav{
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-        }
-        .top_kv_text{
-        width: 100px!important;
-        }
-        .top_kv_img{
-        width: 40px!important;
-        }
-        .top_inner_contents_text_txt{
-        padding: 0;
-        font-size: 19px;
-        line-height: 1.5;
-        }
-        .top_inner_contents_nav_item p{
-            padding-left: 0;
-        }
-        .top_inner_contents_nav_item a {
-            text-align: left;
-            font-size: 25px;
-        }
-        .top_kv_nav_main li {
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        .top_kv_nav_main li a {
-            font-size: 23px;
-        }
-        .top_inner_contents_nav_item a span img{
-            width: 16px;
-            height: 16px;
-        }
+.sidebar{
+    bottom: 20px;
+    padding: 0;
+    left: 0px;
+    width: 250px;
 }
+.top_inner_contents {
+    padding-left: 170px;
+    padding-right: 100px;
+}
+.top_kv_sub {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.top_kv_nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.top_kv_text{
+    width: 100px!important;
+}
+.top_kv_img{
+width: 40px!important;
+}
+.top_inner_contents_text_txt{
+    padding: 0;
+    font-size: 19px;
+    line-height: 1.5;
+    }
+.top_inner_contents_nav_item p{
+    padding-left: 0;
+}
+.top_inner_contents_nav_item a {
+    text-align: left;
+    font-size: 25px;
+    width: 90%;
+}
+.top_kv_nav_main li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.top_kv_nav_main li a {
+    font-size: 23px;
+}
+.top_inner_contents_nav_item a span img{
+    width: 16px;
+    height: 16px;
+}
+}
+/* ここにタブレット〜ノートPC向けのCSS指定 */
 @media screen and (min-width:1024px) and ( max-width:1750px) {
 .video{
 height: 100%;

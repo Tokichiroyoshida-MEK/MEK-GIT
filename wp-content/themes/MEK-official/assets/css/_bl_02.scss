@@ -2,9 +2,9 @@
 .footer{
     width: 100%;
     text-align: center;
-    }
+}
     .top_kv_text{
-    font-family: yumincho;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     font-size: 28px;
     text-align: center;
     margin-top: 15px;
@@ -12,31 +12,31 @@
     color: #D0C5AB;
     border: solid 2px #D0C5AB;
     border-radius: 20px;
-    }
-    .top_kv_text:hover{
-        opacity: 0.5;
-        transition:0.3s
-    }
-    .top_kv_img{
+}
+.top_kv_text:hover{
+    opacity: 0.5;
+    transition:0.3s
+}
+.top_kv_img{
     width: 100px;
     margin-top: 20px;
     margin-left: 20px;
-    }
-    .top_kv_img:hover{
-        opacity: 0.5;
-        transition:0.3s
-    }
-    @media screen and (max-width:768px) {
-        /* ここにSP向けのCSS指定 */
-    .top_kv_text {
-        font-size: 18px;
-        border: solid 1px #D0C5AB;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 85px;
-    }
-    .top_kv_img{
+}
+.top_kv_img:hover{
+    opacity: 0.5;
+    transition:0.3s
+}
+/* ここにSP向けのCSS指定 */
+@media screen and (max-width:768px) {
+.top_kv_text {
+    font-size: 18px;
+    border: solid 1px #D0C5AB;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 85px;
+}
+.top_kv_img{
     margin-left: 10px;
     width:25px;
-    }
+}
 }
