@@ -1,3 +1,5 @@
+<div class="scroll"><span>Scroll</span></div>
+
 <div class="video-wrap pc">
   <video src="<?php echo get_template_directory_uri(); ?>/assets/mov/top_pc.webm" autoplay loop muted playsinline type="video/webm">
   </video>
@@ -21,25 +23,29 @@
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
                             <a href="<?php echo esc_url( home_url( '/concept/' ) ); ?>">こだわりを見る
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png" alt="">
                             </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
                             <a href="<?php echo esc_url( home_url( '/menu/' ) ); ?>">お品書きを見る
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png" alt="">
                             </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
                             <a href="<?php echo esc_url( home_url( '/picky/' ) ); ?>">店舗案内を見る
-                            </a>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png" alt="">
+                        </a>
                         </p>
                     </li>
                     <li class="top_inner_contents_nav_item">
                         <p class="p-button">
                             <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">ご予約を見る
-                            </a>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png" alt="">
+                        </a>
                         </p>
                     </li>
                 </ul>

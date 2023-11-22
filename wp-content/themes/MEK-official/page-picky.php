@@ -71,7 +71,7 @@
                             完全予約制
                         </p>
                 </div>
-                <div class="reserve_btn_wrapper">
+                <div class="reserve_btn_wrapper inner_01">
                     <div class="reserve_btn">
                         <a href="https://www.tablecheck.com/ja/shops/sushi-marufuku/reserve">
                             ご予約はこちら
