@@ -163,16 +163,68 @@ p.main_01_txt_description{
     border-radius: 20px;
     padding: 15px 20px 15px 20px;
 }
+/* スライド */
+.slide_wrapper{
+    width: 700px;
+    height: auto;
+    text-align: center;
+    border: 3px dotted #949FAB;
+    padding: 2em;
+    margin-bottom: 30px;
+}
+.food_title{
+    text-align: center;
+    color: #1B1A19;
+    font-family: YuMincho;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.food_title_txt{
+    color: #1B1A19;
+    text-align: center;
+    font-family: YuMincho;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: normal;
+}
+.inner_02{
+    width: 700px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.slide_description_wrapper{
+    text-align: center;
+}
+.slide_description{
+    font-size: 18px;
+    color: #1B1A19;
+    text-align: left;
+    font-family: YuMincho;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
 
 /* ここからSP */
 @media screen and (max-width:767px) {
 .inner{
     padding-left: 14px;
-    padding-right: 14px;
     width: 330px;
     &_01{
         width: 230px;
     }
+}
+.inner_02{
+    width: 290px;
 }
 /* header */
 .header_01{
@@ -244,6 +296,21 @@ p.main_01_txt_description{
     text-align: center;
     margin-bottom: 50px;
 }
+.slide_description_wrapper{
+text-align: center;
+}
+.slide_description {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.slide_wrapper {
+padding-left: 5px;
+padding-right: 5px;
+}
+.inner_02{
+    max-width: 300px;
+    justify-items: center;
+}
 }
 /* ここからタブレット */
 @media screen and (min-width:768px) and ( max-width:1024px) {
@@ -263,7 +330,6 @@ p.main_01_txt_description{
         border-left: 1px solid #949FAB;
     }
 }
-
 .header_01_reserve{
     width: 100%;
     border-top: 1px solid #949FAB;
@@ -287,5 +353,12 @@ h1.main_01_title::after{
 }
 .main_01_img{
     display: none;
+}
+.inner_02{
+    max-width: 440px;
+    justify-items: center;
+}
+.slide_description_wrapper{
+    text-align: center;
 }
 }
