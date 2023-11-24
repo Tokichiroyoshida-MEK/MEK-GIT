@@ -441,7 +441,7 @@ header {
 }
 .sidebar.top_kv_nav .top_kv_nav_mainli {
   font-size: 36px;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   writing-mode: vertical-rl;
   display: flex;
   margin-right: 20px;
@@ -460,7 +460,7 @@ header {
   writing-mode: vertical-rl;
   font-size: 28px;
   color: #D0C5AB;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .top_kv_nav_main li a:hover {
   opacity: 0.5;
@@ -472,10 +472,62 @@ header {
   justify-items: center;
 }
 
+.scroll {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 50%;
+  animation: scroll 1s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 51%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+.scroll span {
+  position: absolute;
+  z-index: 10;
+  left: -20px;
+  bottom: 10px;
+  color: #D0C5AB;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+}
+
+.scroll:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 1px;
+  height: 20px;
+  background: #D0C5AB;
+  transform: skewX(-31deg);
+}
+
+.scroll:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 50px;
+  background: #D0C5AB;
+}
+
 .top_kv_catch {
   writing-mode: vertical-rl;
   font-size: 36px;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   float: right;
   position: fixed;
   top: 110px;
@@ -490,7 +542,7 @@ header {
 
 .top_inner_contents_text {
   display: block;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   line-height: 1.5;
   margin-bottom: 80px;
 }
@@ -519,22 +571,25 @@ header {
 .top_inner_contents_nav_item {
   display: block;
   font-size: 24px;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 
 .top_inner_contents_nav_item p {
   padding-left: 600px;
   position: relative;
+  text-align: left;
 }
 
 .top_inner_contents_nav_item a {
-  display: block;
+  width: 75%;
+  display: inline-block;
   position: relative;
   color: #D0C5AB;
   font-size: 30px;
   text-align: left;
   margin-bottom: 30px;
   padding-bottom: 15px;
+  text-decoration: none;
   border-bottom: 1px solid #D0C5AB;
 }
 
@@ -544,12 +599,14 @@ header {
 
 .top_inner_contents_nav_item a img {
   position: absolute;
-  top: 5px;
-  right: 100px;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
 }
 
+/* ここにSP向けのCSS指定 */
 @media screen and (max-width: 767px) {
-  /* ここにSP向けのCSS指定 */
   .inner01 {
     margin-top: 750px;
   }
@@ -568,6 +625,9 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content: center;
+  }
+  .top_inner_contents_nav {
+    text-align: left;
   }
   .top_inner_contents_nav_content {
     width: 90%;
@@ -602,15 +662,42 @@ header {
   }
   .top_inner_contents_nav_item a {
     padding-bottom: 10px;
+    width: 100%;
+  }
+  .top_inner_contents_nav_item a img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+  }
+  .scroll {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 10%;
+    animation: scroll 1s ease-in-out infinite;
+  }
+  @keyframes scroll {
+    0% {
+      top: 50%;
+    }
+    50% {
+      top: 51%;
+    }
+    100% {
+      top: 50%;
+    }
   }
 }
+/* ここにPC1920px以上向けのCSS指定 */
 @media screen and (min-width: 1920px) {
   .main {
     margin-top: 950px;
   }
 }
+/* ここにタブレット向けのCSS指定 */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  /* ここにタブレット向けのCSS指定 */
   .sidebar {
     bottom: 20px;
     padding: 0;
@@ -648,6 +735,7 @@ header {
   .top_inner_contents_nav_item a {
     text-align: left;
     font-size: 25px;
+    width: 90%;
   }
   .top_kv_nav_main li {
     margin-right: 10px;
@@ -661,6 +749,7 @@ header {
     height: 16px;
   }
 }
+/* ここにタブレット〜ノートPC向けのCSS指定 */
 @media screen and (min-width: 1024px) and (max-width: 1750px) {
   .video {
     height: 100%;
@@ -687,7 +776,7 @@ header {
 .header_kv_logo img_kv_text_txt {
   font-size: 36px;
   color: #D0C5AB;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   line-height: 1.5;
   writing-mode: vertical-rl;
   position: fixed;
@@ -702,7 +791,7 @@ header {
 
 .header_kv_text_txt {
   font-size: 36px;
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   color: #D0C5AB;
   line-height: 1.5;
   writing-mode: vertical-rl;
@@ -776,7 +865,7 @@ video {
 }
 
 .top_kv_text {
-  font-family: yumincho;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   font-size: 28px;
   text-align: center;
   margin-top: 15px;
@@ -802,8 +891,8 @@ video {
   transition: 0.3s;
 }
 
+/* ここにSP向けのCSS指定 */
 @media screen and (max-width: 768px) {
-  /* ここにSP向けのCSS指定 */
   .top_kv_text {
     font-size: 18px;
     border: solid 1px #D0C5AB;
@@ -963,6 +1052,29 @@ p.main_01_txt_description {
   left: 0;
 }
 
+.reserve_btn_wrapper {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.reserve_btn {
+  margin-top: 160px;
+  text-align: left;
+  color: #1B1A19;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.reserve_btn a {
+  display: block;
+  font-size: 20px;
+  font-family: YuMincho;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 /* ここからSP */
 @media screen and (max-width: 767px) {
   .inner {
@@ -1016,6 +1128,11 @@ p.main_01_txt_description {
   }
   .main_01_img {
     display: none;
+  }
+  .reserve_btn_wrapper {
+    text-align: center;
+    width: 90%;
+    margin: auto;
   }
 }
 /* ここからタブレット */
@@ -1202,6 +1319,8 @@ p.main_01_txt_description {
 
 .reserve_btn_wrapper {
   text-align: center;
+  width: 700px;
+  margin: auto;
 }
 
 .reserve_btn {
@@ -1218,20 +1337,84 @@ p.main_01_txt_description {
 
 .reserve_btn a {
   display: block;
+  width: 200px;
   font-size: 20px;
   font-family: YuMincho;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #1B1A19;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+}
+
+/* スライド */
+.slide_wrapper {
+  width: 700px;
+  height: auto;
+  text-align: center;
+  border: 3px dotted #949FAB;
+  padding: 2em;
+  margin-bottom: 30px;
+}
+
+.food_title {
+  text-align: center;
+  color: #1B1A19;
+  font-family: YuMincho;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.food_title_txt {
+  color: #1B1A19;
+  text-align: center;
+  font-family: YuMincho;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+
+.inner_02 {
+  width: 700px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.slide_description_wrapper {
+  text-align: center;
+}
+
+.slide_description {
+  font-size: 18px;
+  color: #1B1A19;
+  text-align: left;
+  font-family: YuMincho;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 
 /* ここからSP */
 @media screen and (max-width: 767px) {
   .inner {
     padding-left: 14px;
-    padding-right: 14px;
     width: 330px;
   }
   .inner_01 {
     width: 230px;
+  }
+  .inner_02 {
+    width: 290px;
   }
   /* header */
   .header_01_wrapper {
@@ -1285,6 +1468,37 @@ p.main_01_txt_description {
   .main_01_img {
     display: none;
   }
+  .reserve_btn_wrapper {
+    text-align: center;
+    width: 90%;
+  }
+  .main_01_txt_name {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .reserve_btn a {
+    display: block;
+    font-size: 17px;
+    font-family: YuMincho;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .slide_description_wrapper {
+    text-align: center;
+  }
+  .slide_description {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .slide_wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .inner_02 {
+    max-width: 300px;
+    justify-items: center;
+  }
 }
 /* ここからタブレット */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1326,6 +1540,13 @@ p.main_01_txt_description {
   .main_01_img {
     display: none;
   }
+  .inner_02 {
+    max-width: 440px;
+    justify-items: center;
+  }
+  .slide_description_wrapper {
+    text-align: center;
+  }
 }
 /* 全体 */
 .body {
@@ -1337,7 +1558,7 @@ p.main_01_txt_description {
   text-align: center;
   width: 1000px;
   max-width: 100%;
-  padding-top: 6%;
+  padding-top: 5%;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -1401,7 +1622,7 @@ p.main_01_txt_description {
 
 .header_01_reserve a {
   display: inline-block;
-  height: 350px;
+  max-height: 350px;
   writing-mode: vertical-rl;
   color: #1B1A19;
   font-family: YuMincho;
@@ -1460,9 +1681,9 @@ h1.main_01_title::after {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 2px;
+  letter-spacing: normal;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 h2.main_01_txt_title {
@@ -1493,12 +1714,54 @@ p.main_01_txt_description {
   font-size: 20px;
   color: #1B1A19;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
   float: right;
 }
 
 .main_01_txt_name span {
   font-weight: 600;
+}
+
+.main_01_txt_name p {
+  float: right;
+}
+
+.reserve_btn_wrapper {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.reserve_btn_01 {
+  margin-top: 160px;
+  text-align: left;
+  color: #1B1A19;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.reserve_btn_01 a {
+  display: block;
+  font-size: 20px;
+  width: 200px;
+  font-family: YuMincho;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  border: solid 1px #1B1A19;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+}
+
+.reserve_btn_01:hover {
+  opacity: 0.5;
+}
+
+#menu .main_01_title {
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1510,7 +1773,6 @@ p.main_01_txt_description {
 @media screen and (max-width: 767px) {
   .inner {
     padding-left: 14px;
-    padding-right: 14px;
     width: 330px;
   }
   .inner_01 {
@@ -1534,6 +1796,7 @@ p.main_01_txt_description {
   }
   .header_01_reserve a {
     font-size: 24px;
+    max-height: 140px;
   }
   /* main */
   h1.main_01_title {
@@ -1550,7 +1813,7 @@ p.main_01_txt_description {
     left: calc(50% - 23px);
   }
   .main_01_txt_sub {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 50px;
     margin-right: 10px;
   }
@@ -1564,6 +1827,18 @@ p.main_01_txt_description {
   .main_01_img {
     display: none;
   }
+  .main_01_txt_name {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .reserve_btn_01 a {
+    display: block;
+    font-size: 17px;
+    font-family: YuMincho;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 /* ここからタブレット */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1574,7 +1849,7 @@ p.main_01_txt_description {
     width: 800px;
   }
   .inner_01 {
-    width: 540px;
+    width: 450px;
   }
   /* header */
   .header_01_wrapper {
@@ -1583,7 +1858,7 @@ p.main_01_txt_description {
     border-bottom: 1px solid #949FAB;
   }
   .header_01_reserve a {
-    height: 300px;
+    max-height: 300px;
     font-size: 34px;
     font-weight: 600;
   }
@@ -1605,5 +1880,16 @@ p.main_01_txt_description {
   }
   .main_01_img {
     display: none;
+  }
+  .main_01_txt_name {
+    font-size: 20px;
+    color: #1B1A19;
+    text-align: left;
+    line-height: 1.5;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+  .main_01_txt_name span {
+    font-weight: 600;
   }
 }/*# sourceMappingURL=app.css.map */
